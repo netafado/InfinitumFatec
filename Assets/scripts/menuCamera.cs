@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class menuCamera : MonoBehaviour {
 
@@ -21,7 +22,7 @@ public class menuCamera : MonoBehaviour {
         //carregar o cena do jogo
         if(Input.GetButtonUp("Fire1"))
         {
-            Application.LoadLevel(1);
+            SceneManager.LoadScene(1);
             
             
         }

@@ -1,23 +1,40 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/**
+ * Infinitum project
+ * Script resposável por controlar a camera
+ * o objeto com esse script adicionado irá seguir
+ * o gameObject nave e sempre olhará para a direção 
+ * desse objeto, a aproximãção sera feita de maneira 
+ * suave 
+ */
 public class followCamera : MonoBehaviour {
 
 
     [SerializeField]
     private GameObject nave;
-
-    private float offsetZ = 10.2f;
-    private float offsetY = -4.0f;
+    [SerializeField]
+    private float speed;
 
     private Vector3 offset;
-	// Use this for initialization
 	void Start () {
-        offset = new Vector3(0.0f, offsetY, offsetZ);
+        offset = new Vector3(0, 0, 0);
+        offset = transform.position - nave.transform.position;
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        transform.position = nave.transform.position - offset;
+	void LateUpdate () {
+        seguirNave();
+        olharDirecoNave();
+
 	}
+    void seguirNave() {
+        transform.position = Vector3.Lerp(transform.position, nave.transform.position + offset, speed * Time.deltaTime);
+       
+    }
+
+    void olharDirecoNave(){
+        Vector3 posRelativa = nave.transform.position - transform.position;
+        transform.rotation = Quaternion.LookRotation(posRelativa, nave.transform.up);
+    }
 }
