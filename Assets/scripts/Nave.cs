@@ -62,12 +62,15 @@ public class Nave : MonoBehaviour {
         float rotaX = Input.GetAxis("Vertical");
         float rotaZ = Input.GetAxis("Horizontal");
 
-        transform.Rotate(rotaX, rotaZ, 0.0f);        
+      
+        Debug.Log("maixor que x");
+        transform.Rotate(rotaX, rotaZ, 0.0f);
+
 
     }
 
     public float getSpeed()
     {
-        return speed;
+        return this.speed;
     }
 }
