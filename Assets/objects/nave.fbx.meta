@@ -71,6 +71,12 @@ ModelImporter:
     4300006: group2
     4300008: polySurface1
     4300010: polySurface2
+    6400000: group2
+    6400002: group2 1
+    6400004: pCube2
+    6400006: pCube2 1
+    6400008: polySurface1
+    6400010: polySurface2
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -98,7 +104,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

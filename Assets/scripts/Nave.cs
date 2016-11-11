@@ -63,8 +63,7 @@ public class Nave : MonoBehaviour {
         float rotaZ = Input.GetAxis("Horizontal");
 
       
-        Debug.Log("maixor que x");
-        transform.Rotate(rotaX, rotaZ, 0.0f);
+       transform.Rotate(rotaX, rotaZ, 0.0f);
 
 
     }
