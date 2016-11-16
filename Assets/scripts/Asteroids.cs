@@ -48,4 +48,6 @@ public class Asteroids : MonoBehaviour {
 	void Update () {
         transform.Rotate(rotationVel * Time.deltaTime);
 	}
+
+
 }
