@@ -42,7 +42,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 7
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -71,7 +71,8 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000001, guid: d1b8cf7aae1b89a4fac43b5af2d70518,
+    type: 2}
   m_RuntimeCPUUsage: 50
 --- !u!196 &4
 NavMeshSettings:
@@ -206,12 +207,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10259205}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34382083ad114a07d000fbfb8d76c639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iterations: 3
+  iterations: 5
   blurSpread: 0.6
   blurShader: {fileID: 4800000, guid: 57e6deea7c2924e22a5138e2b70bb4dc, type: 3}
 --- !u!1 &92159685
@@ -855,13 +856,13 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 413163390}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!95 &413163392
 Animator:
@@ -910,7 +911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  maxSpeed: 100
+  maxSpeed: 80
   minSpped: 10
 --- !u!65 &413163396
 BoxCollider:
@@ -1292,7 +1293,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1173778324}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1587,7 +1588,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 92159686}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.6099999
+  m_Size: 0.60999995
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1683,31 +1684,21 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-    roots in a piece of classical Latin literature from 45 BC, making it over 2000
-    years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-    Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
-    Ipsum passage, and going through the cites of the word in classical literature,
-    discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-    1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by
-    Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
-    popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor
-    sit amet..\", comes from a line in section 1.10.32.\r\n\r\nThe standard chunk
-    of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-    Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero
-    are also reproduced in their exact original form, accompanied by English versions
-    from the 1914 translation by H. Rackham"
+    m_LineSpacing: 1.2
+  m_Text: "Uma amea\xE7a imbat\xEDvel de propor\xE7\xF5es c\xF3smicas amea\xE7a toda
+    a vida do universo. Para sobreviver, a ra\xE7a humana conta com Tenente Thomas
+    Thompson, que \xE9 auxiliado por uma entidade misteriosa que o orienta e auxilia-o
+    em sua jornada em fuga do que pode ser o fim definitivo de tudo que \xE9 vivo."
 --- !u!222 &1130175478
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1982,7 +1973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroid: {fileID: 1000013878206900, guid: dae3d5e4773ce814aa4a9d9880401f76, type: 2}
-  quantAsteroids: 6
+  quantAsteroids: 8
   espacoEntreAsteroids: 70
   randomPos: 100
 --- !u!4 &1278951537
@@ -2083,7 +2074,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: af2882df45542c14b80f23e245e3a3c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac8800229ccfe4c479220260d6ea7e1d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2464,6 +2455,7 @@ GameObject:
   - 33: {fileID: 1865824781}
   - 23: {fileID: 1865824780}
   - 122: {fileID: 1865824782}
+  - 114: {fileID: 1865824783}
   m_Layer: 0
   m_Name: pSphere1
   m_TagString: Untagged
@@ -2528,11 +2520,24 @@ Halo:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1865824778}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Color:
     serializedVersion: 2
     rgba: 4286611584
   m_Size: 50
+--- !u!114 &1865824783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1865824778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e6a45aeb758a140bc2358565be6f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  rotSpeed: 0.2
 --- !u!1001 &1881984740
 Prefab:
   m_ObjectHideFlags: 0

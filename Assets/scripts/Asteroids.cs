@@ -20,7 +20,7 @@ public class Asteroids : MonoBehaviour {
     [SerializeField]
     private float rotateMax;
 
-
+    private Transform tr;
     // rotaçao de forma randomica tambem
 
     // velocidade
@@ -41,12 +41,12 @@ public class Asteroids : MonoBehaviour {
         transform.localScale = new Vector3(scaleX, scaleY, scaleZ);
         transform.Rotate(rotationVel);
 
-
+        tr = transform;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(rotationVel * Time.deltaTime);
+        tr.Rotate(rotationVel * Time.deltaTime);
 	}
 
 

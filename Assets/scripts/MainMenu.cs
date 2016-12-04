@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour {
 
     public void btnJogar()
     {
-        goToScene( "land" );
+        goToScene( "space" );
     }
     
 }

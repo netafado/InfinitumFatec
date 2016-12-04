@@ -12,7 +12,7 @@ public class followCamera : MonoBehaviour {
 
 
 
-    public Vector3 velocity = Vector3.one;
+    public Vector3 velocity = Vector3.one * 10f;
     public Vector3 distancia = Vector3.one;
 
     public float objDistance;
@@ -45,7 +45,7 @@ public class followCamera : MonoBehaviour {
 
         }else  
         {
-            t.Translate(t.forward * 0.5f * Time.deltaTime);
+            t.Translate(t.forward * 1.5f * Time.deltaTime);
             t.Rotate(new Vector3(0f, 0.01f, 0f));
             Debug.Log("intro");
         }       

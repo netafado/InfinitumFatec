@@ -18,7 +18,8 @@ public class GameState : MonoBehaviour {
     private Nave naveScript;
     private Text textGameState;
     private followCamera mainCameraScript;
-    private ScrollRect scrollIntro;
+    private GameObject scrollIntro;
+    private GameObject btnSkyp;
     //[SerializeField] followCamera scritCamera;
 
     //textos para mostrar no monitor
@@ -33,8 +34,8 @@ public class GameState : MonoBehaviour {
         naveScript = nave.GetComponent<Nave>();
         textGameState = GameObject.Find("TextosGameStates").GetComponent<Text>();
         mainCameraScript = GameObject.Find("Main Camera").GetComponent<followCamera>();
-        scrollIntro = GameObject.Find("ScrollIntro").GetComponent<ScrollRect>();
-        
+        scrollIntro = GameObject.Find("ScrollIntro");
+        btnSkyp = GameObject.Find("ButtonSkip");
 
     }
 	
@@ -45,15 +46,17 @@ public class GameState : MonoBehaviour {
             naveScript.enabled = false;
             textGameState.text = tPausado;
             mainCameraScript.enabled = false;
-            scrollIntro.enabled = false;
+            scrollIntro.SetActive(false);
+            btnSkyp.SetActive(false);
         }
         else if( CURRENT_STATE == GAME_STATE.jogando)
         {
             naveScript.enabled = true;
             textGameState.text = tJogando;
             mainCameraScript.enabled = true;
-            scrollIntro.enabled = false;
-            scrollIntro.transform.Translate(new Vector3(2000f, 0f, 0f));
+            scrollIntro.SetActive(false);
+            btnSkyp.SetActive(false);
+
         }
         else if(CURRENT_STATE == GAME_STATE.intro)
         {
@@ -61,6 +64,8 @@ public class GameState : MonoBehaviour {
             textGameState.text = tIntro;
             mainCameraScript.enabled = true;
             scrollIntro.transform.Translate(new Vector3(0f, 0f, 0f));
+            scrollIntro.SetActive(true);
+            btnSkyp.SetActive(true);
         }
 
 
