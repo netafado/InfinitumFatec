@@ -21,5 +21,10 @@ public class MainMenu : MonoBehaviour {
     {
         goToScene( "space" );
     }
+
+    public void menuPrincipal()
+    {
+        goToScene("menu");
+    }
     
 }

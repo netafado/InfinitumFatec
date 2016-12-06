@@ -1,18 +1,31 @@
 fileFormatVersion: 2
-guid: c67cf085d018770499c0db0b8c814645
-timeCreated: 1474678090
+guid: 272c646161361d2479d185d4971b04a5
+timeCreated: 1481043503
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pPyramid3
+    100002: pasted__group1
+    100004: pasted__pPyramid2
+    100006: pasted__pPyramid7
+    100008: pasted__pPyramid8
     400000: //RootNode
-    400002: pPyramid3
-    2300000: pPyramid3
-    3300000: pPyramid3
-    4300000: pPyramid3
-    6400000: pPyramid3
+    400002: pasted__group1
+    400004: pasted__pPyramid2
+    400006: pasted__pPyramid7
+    400008: pasted__pPyramid8
+    2300000: pasted__pPyramid2
+    2300002: pasted__pPyramid7
+    2300004: pasted__pPyramid8
+    3300000: pasted__pPyramid2
+    3300002: pasted__pPyramid7
+    3300004: pasted__pPyramid8
+    4300000: pasted__pPyramid2
+    4300002: pasted__pPyramid7
+    4300004: pasted__pPyramid8
+    7400000: Take 001
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -37,9 +50,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 50
+    globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -71,7 +84,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

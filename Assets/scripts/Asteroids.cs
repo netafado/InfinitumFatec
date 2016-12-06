@@ -11,6 +11,9 @@ public class Asteroids : MonoBehaviour {
     private Vector3 rotationVel;
 
     [SerializeField]
+    private GameObject explosao;
+
+    [SerializeField]
     private float minRange;
     [SerializeField]
     private float maxRange;
@@ -19,6 +22,9 @@ public class Asteroids : MonoBehaviour {
     private float RotateMin;
     [SerializeField]
     private float rotateMax;
+
+    
+   
 
     private Transform tr;
     // rotaçao de forma randomica tambem
@@ -42,12 +48,23 @@ public class Asteroids : MonoBehaviour {
         transform.Rotate(rotationVel);
 
         tr = transform;
+
+        // audio
+      
     }
 	
 	// Update is called once per frame
 	void Update () {
         tr.Rotate(rotationVel * Time.deltaTime);
 	}
+    // destruir o objeto
+   public void colidiu(Vector3 position)
+    {
+        Instantiate(explosao, position, Quaternion.identity);
+        
+        DestroyObject(gameObject);        
+    }
+
 
 
 }

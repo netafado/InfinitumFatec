@@ -43,29 +43,15 @@ public class GameState : MonoBehaviour {
 
 	    if(CURRENT_STATE == GAME_STATE.pause)
         {
-            naveScript.enabled = false;
-            textGameState.text = tPausado;
-            mainCameraScript.enabled = false;
-            scrollIntro.SetActive(false);
-            btnSkyp.SetActive(false);
+            Pause();
         }
         else if( CURRENT_STATE == GAME_STATE.jogando)
         {
-            naveScript.enabled = true;
-            textGameState.text = tJogando;
-            mainCameraScript.enabled = true;
-            scrollIntro.SetActive(false);
-            btnSkyp.SetActive(false);
-
+            Jogando();
         }
         else if(CURRENT_STATE == GAME_STATE.intro)
         {
-            naveScript.enabled = false;
-            textGameState.text = tIntro;
-            mainCameraScript.enabled = true;
-            scrollIntro.transform.Translate(new Vector3(0f, 0f, 0f));
-            scrollIntro.SetActive(true);
-            btnSkyp.SetActive(true);
+            Intro();
         }
 
 
@@ -78,6 +64,37 @@ public class GameState : MonoBehaviour {
     void resetGame()
     {
         SceneManager.LoadScene("land");
+    }
+
+    void Jogando()
+    {
+        naveScript.enabled = true;
+        textGameState.text = tJogando;
+        mainCameraScript.enabled = true;
+        scrollIntro.SetActive(false);
+        btnSkyp.SetActive(false);
+    }
+
+    void Intro()
+    {
+        naveScript.enabled = false;
+        textGameState.text = tIntro;
+        mainCameraScript.enabled = true;
+        scrollIntro.transform.Translate(new Vector3(0f, 0f, 0f));
+        scrollIntro.SetActive(true);
+        btnSkyp.SetActive(true);
+
+    }
+
+
+
+    void Pause()
+    {
+        naveScript.enabled = false;
+        textGameState.text = tPausado;
+        mainCameraScript.enabled = false;
+        scrollIntro.SetActive(false);
+        btnSkyp.SetActive(false);
     }
 
     public void setState(GAME_STATE state)
