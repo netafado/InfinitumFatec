@@ -1375,7 +1375,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1173778324}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999997
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1591,7 +1591,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 964068662}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 180.4, y: -118, z: 1705}
+  m_LocalPosition: {x: 180.4, y: 21, z: 237}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1675,7 +1675,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 92159686}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.6100001
+  m_Size: 0.6099998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1782,10 +1782,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "Uma amea\xE7a imbat\xEDvel de propor\xE7\xF5es c\xF3smicas amea\xE7a toda
-    a vida do universo. Para sobreviver, a ra\xE7a humana conta com Tenente Thomas
-    Thompson, que \xE9 auxiliado por uma entidade misteriosa que o orienta e auxilia-o
-    em sua jornada em fuga do que pode ser o fim definitivo de tudo que \xE9 vivo."
+  m_Text: "No ano de 2100 a Terra passa por um grande colapso, escassez de alimento,
+    superpopula\xE7\xE3o e grandes pot\xEAncias guerreando entre s\xED, deixando o
+    planeta em estado de emerg\xEAncia, havia uma opera\xE7\xE3o secreta espacial
+    sendo desenvolvida pela USEI(Unidade Secreta Espacial Internacional), tinha como
+    objetivo se o mundo estivesse prestes a acabar, ativariam o protocolo e mandariam
+    \u201COs escolhidos\u201D para o universo com a chance de perpetuar a sobreviv\xEAncia
+    da esp\xE9cie humana. Os escolhidos eram jovens de 20 a 25 anos, pelo auge sexual
+    nessa idade com o intuito de reprodu\xE7\xE3o da ra\xE7a humana, sempre uma mulher
+    e um homem. Os escolhidos n\xE3o podiam rejeitar a proposta, eram obrigados, Kevin
+    o protagonista foi um deles, amava sua fam\xEDlia imensamente e n\xE3o se imaginava
+    a dist\xE2ncias anos-luz deles. Sua m\xE3e Norma chorou muito ao se despedir dele
+    quando ele foi escolhido, seu pai James se manteve firme para n\xE3o demonstrar
+    o qu\xE3o triste e enraivecido com a USEI."
 --- !u!222 &1130175478
 CanvasRenderer:
   m_ObjectHideFlags: 0
